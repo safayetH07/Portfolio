@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Safayet | About</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .about-section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+      font-weight: 800;
+    }
+
+    .about-photo-frame {
+      width: 320px;
+      height: 320px;
+      margin: 0 auto 2rem;
+      border-radius: 50%;
+      padding: 10px;
+      background: conic-gradient(from 180deg at 50% 50%, #facc15, #3b82f6, #facc15);
+      box-shadow: 0 0 25px rgba(251, 191, 36, 0.6), 0 15px 30px rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-photo-frame img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid white;
+      transition: transform 0.5s ease;
+    }
+
+    .about-photo-frame:hover img {
+      transform: scale(1.05);
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .btn {
+      background: linear-gradient(to right, #facc15, #fbbf24);
+      color: #1e293b;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      box-shadow: 0 6px 16px rgba(251,191,36,0.6);
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #fbbf24, #facc15);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(251,191,36,0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Safayet</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About Me</h2>
+    <div class="about-photo-frame">
+      <img src="https://i.imgur.com/bOkTwpJ.jpeg" alt="Safayet Hossen" />
+    </div>
+    <p>
+      I’m a B.Sc Software Engineering student at Daffodil International University. I enjoy creating clean, responsive designs and building real-world software projects. I’m a problem solver with skills in HTML, CSS, JavaScript, and writing clear, structured system documentation.
+    </p>
+    <a href="https://drive.google.com/file/d/1-4oojxkmQcQr-MvFWQKUHYgJEToLaeGJ/view?usp=sharing"
+       class="btn"
+       target="_blank">
+      📄 Download My CV
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Safayet Hossen. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

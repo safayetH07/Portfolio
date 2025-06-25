@@ -1,0 +1,197 @@
+/* ==== Global Styles ==== */
+:root {
+  --primary-color: #0f172a; /* deep navy */
+  --secondary-color: #38bdf8; /* sky blue */
+  --accent-color: #facc15; /* yellow for highlights */
+  --text-color: #1f2937; /* dark gray */
+  --bg-light: #f1f5f9; /* soft light gray-blue */
+  --bg-dark: #0f172a; /* matching deep navy */
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  font-weight: 600;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* ==== Section ==== */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--primary-color);
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+/* ==== Projects ==== */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 0.6rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-card a {
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ==== Contact Form ==== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  width: 100%;
+}
+
+form button {
+  background: linear-gradient(to right, #38bdf8, #0ea5e9);
+  color: white;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: linear-gradient(to right, #0ea5e9, #38bdf8);
+  box-shadow: 0 10px 24px rgba(14,165,233,0.5);
+}
+
+/* ==== Get in Touch Button ==== */
+.get-in-touch-btn {
+  background-color: var(--accent-color);
+  color: black;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.get-in-touch-btn:hover {
+  background-color: #eab308;
+}
+
+/* ==== Social Links ==== */
+.social-icons {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-icons h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  color: var(--secondary-color);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+  transform: scale(1.2);
+}
+
+/* ==== Footer ==== */
+footer {
+  background-color: var(--bg-dark);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+  }
+}
